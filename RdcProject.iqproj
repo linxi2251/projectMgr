@@ -1,0 +1,1502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project version="2">
+ <WMSLayer>121</WMSLayer>
+ <VectorLayers/>
+ <SwathGroup visible="1" name="Survey_2024-07-16_22-29-53">
+  <Folder>D:/Users/buf/Documents/AAA测试数据/09gddl_2024.07.16_22.24.28/Survey_2024-07-16_22-29-53</Folder>
+  <Processing>
+   <Array antennaName="AM600" id="1">
+    <DataProcessingParameters cutType="channel" name="Standard Processing">
+     <Range min="-0.11999999731779099" max="0.11999999731779099" mode="0"/>
+    </DataProcessingParameters>
+    <DataProcessingParameters cutType="depth" name="Standard Processing">
+     <Range min="0" max="0.040000000000000001" mode="0"/>
+     <FilterItem enabled="1" name="FilterDewow">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSoilSample">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="0" name="ChannelsTimeOffset"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterFIR_BandPass">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="2500000000" name="HighCutFrequency"/>
+      <Parameter value="200000000" name="LowCutFrequency"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="10" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSTCSmoothed">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="2" uom="ns" name="Delay"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="20" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterMigrationTD">
+      <Parameter value="1" name="Bilateral"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="1" name="Width"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterAbsoluteValue">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterMaxY">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="2" uom="ns" name="WindowSize"/>
+      <Parameter value="0.117188" uom="ns" name="WindowStep"/>
+      <Parameter value="1" name="WindowType"/>
+     </FilterItem>
+    </DataProcessingParameters>
+    <DataProcessingParameters cutType="cross" name="Standard Processing">
+     <Range min="-0.12" max="0.12" mode="0"/>
+     <FilterItem enabled="1" name="FilterDewow">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSoilSample">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="0" name="ChannelsTimeOffset"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterFIR_BandPass">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="2500000000" name="HighCutFrequency"/>
+      <Parameter value="200000000" name="LowCutFrequency"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="10" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSTCSmoothed">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="2" uom="ns" name="Delay"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="20" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+    </DataProcessingParameters>
+   </Array>
+   <Array antennaName="AM200" id="2">
+    <DataProcessingParameters cutType="channel" name="Standard Processing">
+     <Range min="-0.12" max="0.12" mode="0"/>
+     <FilterItem enabled="1" name="FilterDewow">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSoilSample">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="0" name="ChannelsTimeOffset"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterFIR_BandPass">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="1950000000" name="HighCutFrequency"/>
+      <Parameter value="150000000" name="LowCutFrequency"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="20" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSTCSmoothed">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="2" uom="ns" name="Delay"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+    </DataProcessingParameters>
+    <DataProcessingParameters cutType="depth" name="Standard Processing">
+     <Range min="0" max="0.040000000000000001" mode="0"/>
+     <FilterItem enabled="1" name="FilterDewow">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSoilSample">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="0" name="ChannelsTimeOffset"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterFIR_BandPass">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="1950000000" name="HighCutFrequency"/>
+      <Parameter value="100000000" name="LowCutFrequency"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="20" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSTCSmoothed">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="2" uom="ns" name="Delay"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterMigrationTD">
+      <Parameter value="1" name="Bilateral"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="1" name="Transversal"/>
+      <Parameter value="1.5" name="Width"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterAbsoluteValue">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterMaxY">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="2" uom="ns" name="WindowSize"/>
+      <Parameter value="0.195313" uom="ns" name="WindowStep"/>
+      <Parameter value="1" name="WindowType"/>
+     </FilterItem>
+    </DataProcessingParameters>
+    <DataProcessingParameters cutType="cross" name="Standard Processing">
+     <Range min="-0.12" max="0.12" mode="0"/>
+     <FilterItem enabled="1" name="FilterDewow">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSoilSample">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="0" name="ChannelsTimeOffset"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterFIR_BandPass">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="1950000000" name="HighCutFrequency"/>
+      <Parameter value="150000000" name="LowCutFrequency"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="20" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSTCSmoothed">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="2" uom="ns" name="Delay"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+    </DataProcessingParameters>
+   </Array>
+  </Processing>
+  <PropagationVelocity value="100000000"/>
+  <Markers/>
+ </SwathGroup>
+ <SwathGroup visible="1" name="Survey_2024-07-17_02-50-22">
+  <Folder>D:/Users/buf/Documents/AAA测试数据/09gddl_2024.07.16_22.24.28/Survey_2024-07-17_02-50-22</Folder>
+  <Processing>
+   <Array antennaName="AM600" id="1">
+    <DataProcessingParameters cutType="channel" name="Standard Processing">
+     <Range min="-0.12" max="0.12" mode="0"/>
+     <FilterItem enabled="1" name="FilterDewow">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSoilSample">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="0" name="ChannelsTimeOffset"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterFIR_BandPass">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="2500000000" name="HighCutFrequency"/>
+      <Parameter value="200000000" name="LowCutFrequency"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="10" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSTCSmoothed">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="2" uom="ns" name="Delay"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="20" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+    </DataProcessingParameters>
+    <DataProcessingParameters cutType="depth" name="Standard Processing">
+     <Range min="0" max="0.040000000000000001" mode="0"/>
+     <FilterItem enabled="1" name="FilterDewow">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSoilSample">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="0" name="ChannelsTimeOffset"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterFIR_BandPass">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="2500000000" name="HighCutFrequency"/>
+      <Parameter value="200000000" name="LowCutFrequency"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="10" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSTCSmoothed">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="2" uom="ns" name="Delay"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="20" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterMigrationTD">
+      <Parameter value="1" name="Bilateral"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="1" name="Width"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterAbsoluteValue">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterMaxY">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="2" uom="ns" name="WindowSize"/>
+      <Parameter value="0.195313" uom="ns" name="WindowStep"/>
+      <Parameter value="1" name="WindowType"/>
+     </FilterItem>
+    </DataProcessingParameters>
+    <DataProcessingParameters cutType="cross" name="Standard Processing">
+     <Range min="-0.12" max="0.12" mode="0"/>
+     <FilterItem enabled="1" name="FilterDewow">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSoilSample">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="0" name="ChannelsTimeOffset"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterFIR_BandPass">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="2500000000" name="HighCutFrequency"/>
+      <Parameter value="200000000" name="LowCutFrequency"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="10" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSTCSmoothed">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="2" uom="ns" name="Delay"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="20" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+    </DataProcessingParameters>
+   </Array>
+   <Array antennaName="AM200" id="2">
+    <DataProcessingParameters cutType="channel" name="Standard Processing">
+     <Range min="-0.12" max="0.12" mode="0"/>
+     <FilterItem enabled="1" name="FilterDewow">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSoilSample">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="0" name="ChannelsTimeOffset"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterFIR_BandPass">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="1950000000" name="HighCutFrequency"/>
+      <Parameter value="150000000" name="LowCutFrequency"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="20" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSTCSmoothed">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="2" uom="ns" name="Delay"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+    </DataProcessingParameters>
+    <DataProcessingParameters cutType="depth" name="Standard Processing">
+     <Range min="0" max="0.040000000000000001" mode="0"/>
+     <FilterItem enabled="1" name="FilterDewow">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSoilSample">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="0" name="ChannelsTimeOffset"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterFIR_BandPass">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="1950000000" name="HighCutFrequency"/>
+      <Parameter value="100000000" name="LowCutFrequency"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="20" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSTCSmoothed">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="2" uom="ns" name="Delay"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterMigrationTD">
+      <Parameter value="1" name="Bilateral"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="1" name="Transversal"/>
+      <Parameter value="1.5" name="Width"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterAbsoluteValue">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterMaxY">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="2" uom="ns" name="WindowSize"/>
+      <Parameter value="0.195313" uom="ns" name="WindowStep"/>
+      <Parameter value="1" name="WindowType"/>
+     </FilterItem>
+    </DataProcessingParameters>
+    <DataProcessingParameters cutType="cross" name="Standard Processing">
+     <Range min="-0.12" max="0.12" mode="0"/>
+     <FilterItem enabled="1" name="FilterDewow">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSoilSample">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="0" name="ChannelsTimeOffset"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterFIR_BandPass">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="1950000000" name="HighCutFrequency"/>
+      <Parameter value="150000000" name="LowCutFrequency"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="20" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSTCSmoothed">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="2" uom="ns" name="Delay"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+    </DataProcessingParameters>
+   </Array>
+  </Processing>
+  <PropagationVelocity value="100000000"/>
+  <Markers/>
+ </SwathGroup>
+ <SwathGroup visible="1" name="Survey_2024-07-21_20-57-02">
+  <Folder>D:/Users/buf/Documents/AAA测试数据/09gddl_2024.07.16_22.24.28/Survey_2024-07-21_20-57-02</Folder>
+  <Processing>
+   <Array antennaName="AM600" id="1">
+    <DataProcessingParameters cutType="channel" name="Standard Processing">
+     <Range min="-0.12" max="0.12" mode="0"/>
+     <FilterItem enabled="1" name="FilterDewow">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSoilSample">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="0" name="ChannelsTimeOffset"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterFIR_BandPass">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="2500000000" name="HighCutFrequency"/>
+      <Parameter value="200000000" name="LowCutFrequency"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="10" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSTCSmoothed">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="2" uom="ns" name="Delay"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="20" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+    </DataProcessingParameters>
+    <DataProcessingParameters cutType="depth" name="Standard Processing">
+     <Range min="0" max="0.040000000000000001" mode="0"/>
+     <FilterItem enabled="1" name="FilterDewow">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSoilSample">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="0" name="ChannelsTimeOffset"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterFIR_BandPass">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="2500000000" name="HighCutFrequency"/>
+      <Parameter value="200000000" name="LowCutFrequency"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="10" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSTCSmoothed">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="2" uom="ns" name="Delay"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="20" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterMigrationTD">
+      <Parameter value="1" name="Bilateral"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="1" name="Width"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterAbsoluteValue">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterMaxY">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="2" uom="ns" name="WindowSize"/>
+      <Parameter value="0.117188" uom="ns" name="WindowStep"/>
+      <Parameter value="1" name="WindowType"/>
+     </FilterItem>
+    </DataProcessingParameters>
+    <DataProcessingParameters cutType="cross" name="Standard Processing">
+     <Range min="-0.12" max="0.12" mode="0"/>
+     <FilterItem enabled="1" name="FilterDewow">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSoilSample">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="0" name="ChannelsTimeOffset"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterFIR_BandPass">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="2500000000" name="HighCutFrequency"/>
+      <Parameter value="200000000" name="LowCutFrequency"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="10" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSTCSmoothed">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="2" uom="ns" name="Delay"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="20" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+    </DataProcessingParameters>
+   </Array>
+   <Array antennaName="AM200" id="2">
+    <DataProcessingParameters cutType="channel" name="Standard Processing">
+     <Range min="-0.12" max="0.12" mode="0"/>
+     <FilterItem enabled="1" name="FilterDewow">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSoilSample">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="0" name="ChannelsTimeOffset"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterFIR_BandPass">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="1950000000" name="HighCutFrequency"/>
+      <Parameter value="150000000" name="LowCutFrequency"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="20" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSTCSmoothed">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="2" uom="ns" name="Delay"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+    </DataProcessingParameters>
+    <DataProcessingParameters cutType="depth" name="Standard Processing">
+     <Range min="0" max="0.040000000000000001" mode="0"/>
+     <FilterItem enabled="1" name="FilterDewow">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSoilSample">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="0" name="ChannelsTimeOffset"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterFIR_BandPass">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="1950000000" name="HighCutFrequency"/>
+      <Parameter value="100000000" name="LowCutFrequency"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="20" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSTCSmoothed">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="2" uom="ns" name="Delay"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterMigrationTD">
+      <Parameter value="1" name="Bilateral"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="1" name="Transversal"/>
+      <Parameter value="1.5" name="Width"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterAbsoluteValue">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterMaxY">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="2" uom="ns" name="WindowSize"/>
+      <Parameter value="0.117188" uom="ns" name="WindowStep"/>
+      <Parameter value="1" name="WindowType"/>
+     </FilterItem>
+    </DataProcessingParameters>
+    <DataProcessingParameters cutType="cross" name="Standard Processing">
+     <Range min="-0.12" max="0.12" mode="0"/>
+     <FilterItem enabled="1" name="FilterDewow">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSoilSample">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="0" name="ChannelsTimeOffset"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterFIR_BandPass">
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="1950000000" name="HighCutFrequency"/>
+      <Parameter value="150000000" name="LowCutFrequency"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="20" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSTCSmoothed">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.117188" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="2" uom="ns" name="Delay"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+    </DataProcessingParameters>
+   </Array>
+  </Processing>
+  <PropagationVelocity value="100000000"/>
+  <Markers/>
+ </SwathGroup>
+ <SwathGroup visible="1" name="Survey_2024-09-26_08-09-54">
+  <Folder>D:/Users/buf/Documents/AAA测试数据/myl-9.26_2024.09.26_08.10.09/Survey_2024-09-26_08-09-54</Folder>
+  <Processing>
+   <Array antennaName="AM600" id="1">
+    <DataProcessingParameters cutType="channel" name="Standard Processing">
+     <Range min="-0.12" max="0.12" mode="0"/>
+     <FilterItem enabled="1" name="FilterDewow">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSoilSample">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="0" name="ChannelsTimeOffset"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterFIR_BandPass">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="2500000000" name="HighCutFrequency"/>
+      <Parameter value="200000000" name="LowCutFrequency"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="10" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSTCSmoothed">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="2" uom="ns" name="Delay"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="20" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+    </DataProcessingParameters>
+    <DataProcessingParameters cutType="depth" name="Standard Processing">
+     <Range min="0" max="0.040000000000000001" mode="0"/>
+     <FilterItem enabled="1" name="FilterDewow">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSoilSample">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="0" name="ChannelsTimeOffset"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterFIR_BandPass">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="2500000000" name="HighCutFrequency"/>
+      <Parameter value="200000000" name="LowCutFrequency"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="10" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSTCSmoothed">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="2" uom="ns" name="Delay"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="20" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterMigrationTD">
+      <Parameter value="1" name="Bilateral"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="1" name="Width"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterAbsoluteValue">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterMaxY">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="2" uom="ns" name="WindowSize"/>
+      <Parameter value="0.195313" uom="ns" name="WindowStep"/>
+      <Parameter value="1" name="WindowType"/>
+     </FilterItem>
+    </DataProcessingParameters>
+    <DataProcessingParameters cutType="cross" name="Standard Processing">
+     <Range min="-0.12" max="0.12" mode="0"/>
+     <FilterItem enabled="1" name="FilterDewow">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSoilSample">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="0" name="ChannelsTimeOffset"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterFIR_BandPass">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="2500000000" name="HighCutFrequency"/>
+      <Parameter value="200000000" name="LowCutFrequency"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="10" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSTCSmoothed">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.04" name="ChannelDx"/>
+      <Parameter value="2" uom="ns" name="Delay"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="20" name="WindowSize"/>
+      <Parameter value="0.04" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+    </DataProcessingParameters>
+   </Array>
+   <Array antennaName="AM200" id="2">
+    <DataProcessingParameters cutType="channel" name="Standard Processing">
+     <Range min="-0.12" max="0.12" mode="0"/>
+     <FilterItem enabled="1" name="FilterDewow">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSoilSample">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="0" name="ChannelsTimeOffset"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterFIR_BandPass">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="1950000000" name="HighCutFrequency"/>
+      <Parameter value="150000000" name="LowCutFrequency"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="20" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSTCSmoothed">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="2" uom="ns" name="Delay"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+    </DataProcessingParameters>
+    <DataProcessingParameters cutType="depth" name="Standard Processing">
+     <Range min="0" max="0.040000000000000001" mode="0"/>
+     <FilterItem enabled="1" name="FilterDewow">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSoilSample">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="0" name="ChannelsTimeOffset"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterFIR_BandPass">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="1950000000" name="HighCutFrequency"/>
+      <Parameter value="100000000" name="LowCutFrequency"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="20" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSTCSmoothed">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="2" uom="ns" name="Delay"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterMigrationTD">
+      <Parameter value="1" name="Bilateral"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="1" name="Transversal"/>
+      <Parameter value="1.5" name="Width"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterAbsoluteValue">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterMaxY">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="2" uom="ns" name="WindowSize"/>
+      <Parameter value="0.195313" uom="ns" name="WindowStep"/>
+      <Parameter value="1" name="WindowType"/>
+     </FilterItem>
+    </DataProcessingParameters>
+    <DataProcessingParameters cutType="cross" name="Standard Processing">
+     <Range min="-0.12" max="0.12" mode="0"/>
+     <FilterItem enabled="1" name="FilterDewow">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSoilSample">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="0" name="ChannelsTimeOffset"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterFIR_BandPass">
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="1950000000" name="HighCutFrequency"/>
+      <Parameter value="150000000" name="LowCutFrequency"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterBackgroundRemove">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="20" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+     <FilterItem enabled="1" name="FilterSTCSmoothed">
+      <Parameter value="0" name="Accumulator"/>
+      <Parameter value="0.195313" uom="ns" name="ChannelDt"/>
+      <Parameter value="0.08" name="ChannelDx"/>
+      <Parameter value="2" uom="ns" name="Delay"/>
+      <Parameter value="100000000" name="PropagationVelocity"/>
+      <Parameter value="0" name="Transversal"/>
+      <Parameter value="40" name="WindowSize"/>
+      <Parameter value="0.08" name="WindowStep"/>
+      <Parameter value="0" name="WindowType"/>
+     </FilterItem>
+    </DataProcessingParameters>
+   </Array>
+  </Processing>
+  <PropagationVelocity value="100000000"/>
+  <Markers/>
+ </SwathGroup>
+ <Features/>
+</Project>
